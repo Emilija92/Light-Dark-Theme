@@ -292,6 +292,9 @@ nav.responsiveNav{
 nav.responsiveNav a {
   width: 40%;
 }
+.bodyScroll {
+  overflow: hidden;
+}
 /************************
 RESPONSIVE
 *************************/

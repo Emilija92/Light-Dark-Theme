@@ -7,6 +7,7 @@ const image3 = document.querySelector('#image3');
 const textBox = document.querySelector('#text-box');
 const bars = document.querySelector('.fa-bars');
 const closeIcon = document.querySelector('.fa-times');
+const body = document.querySelector('body');
 
 //Image mode
 function imageMode(color) {
@@ -76,7 +77,9 @@ function showNavigation() {
     closeIcon.addEventListener('click', () => {
         nav.classList.remove('responsiveNav');
         bars.style.display = 'block';
+        body.classList.remove('bodyScroll');
     })
+    body.classList.add('bodyScroll');
 }
 
 bars.addEventListener('click', showNavigation);
