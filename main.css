@@ -273,14 +273,14 @@ input:checked + .slider::before {
   position: relative;
   top: 50px;
   left: 30px;
-  font-size: 50px;
+  font-size: 40px;
 }
 .fa-times {
   visibility: hidden;
   z-index: 999;
   color: red;
   margin-top: 40px;
-  font-size: 50px;
+  font-size: 40px;
 }
 nav.responsiveNav{
   height: 50vh;
