@@ -5,6 +5,8 @@ const image1 = document.querySelector('#image1');
 const image2 = document.querySelector('#image2');
 const image3 = document.querySelector('#image3');
 const textBox = document.querySelector('#text-box');
+const bars = document.querySelector('.fa-bars');
+const closeIcon = document.querySelector('.fa-times');
 
 //Image mode
 function imageMode(color) {
@@ -36,9 +38,6 @@ function lightMode() {
 }
 
 
-
-
-
 //Switch Theme
 function switchTheme(e) {
     if(e.target.checked) {
@@ -64,3 +63,21 @@ if(currentTheme) {
         darkMode()
     }
 }
+
+
+
+
+
+//Responsive navigation
+
+function showNavigation() {
+    nav.classList.add('responsiveNav');
+    bars.style.display = 'none';
+    closeIcon.addEventListener('click', () => {
+        nav.classList.remove('responsiveNav');
+        bars.style.display = 'block';
+    })
+}
+
+bars.addEventListener('click', showNavigation);
+
